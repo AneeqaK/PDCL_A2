@@ -4,7 +4,7 @@ public class FIXOrderEvent extends TradeEvent {
     private int quantity;
     public FIXOrderEvent(String senderId, long timestamp,
                          double basePrice, String clOrdId,
-                         int quantity) {
+                         int quantity){
         super(senderId, timestamp, basePrice);
         this.clOrdId = clOrdId;
         this.quantity = quantity;
