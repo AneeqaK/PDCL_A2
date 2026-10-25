@@ -12,7 +12,6 @@ public class PacketSymmetryAuditor{
         while (!stack.isEmpty() && !queue.isEmpty()){
             char stackChar = stack.pop();
             char queueChar = queue.dequeue();
-
             if (stackChar != queueChar){
                 return false;
             }
