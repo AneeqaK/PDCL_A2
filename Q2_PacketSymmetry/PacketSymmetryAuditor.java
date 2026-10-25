@@ -9,7 +9,7 @@ public class PacketSymmetryAuditor{
             stack.push(ch);
             queue.enqueue(ch);
         }
-        while (!stack.isEmpty() && !queue.isEmpty()) {
+        while (!stack.isEmpty() && !queue.isEmpty()){
             char stackChar = stack.pop();
             char queueChar = queue.dequeue();
 
