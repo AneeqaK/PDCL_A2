@@ -23,7 +23,7 @@ public class PacketSymmetryAuditor {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter packet data: ");
         String data = input.nextLine();
-        if (isSymmetric(data)) {
+        if (isSymmetric(data)){
             System.out.println("Result: Packet data is symmetric.");
         } else {
             System.out.println("Result: Packet data is not symmetric.");
