@@ -12,7 +12,7 @@ public class RequestQueue{
         rear = -1;
         size = 0;
     }
-    public void enqueue(char item) {
+    public void enqueue(char item){
         if (size == capacity) {
             System.out.println("Queue is full.");
             return;
