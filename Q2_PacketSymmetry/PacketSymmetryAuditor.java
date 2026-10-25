@@ -1,7 +1,7 @@
 package Q2_PacketSymmetry;
 import java.util.Scanner;
-public class PacketSymmetryAuditor {
-    public static boolean isSymmetric(String data){
+public class PacketSymmetryAuditor{
+    public static boolean isSymmetric(String data) {
         TransactionStack stack = new TransactionStack(data.length());
         RequestQueue queue = new RequestQueue(data.length());
         for (int i = 0; i < data.length(); i++){
@@ -14,8 +14,7 @@ public class PacketSymmetryAuditor {
             char queueChar = queue.dequeue();
 
             if (stackChar != queueChar) {
-                return false;
-            }
+                return false;  }
         }
         return true;
     }
