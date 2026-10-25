@@ -9,20 +9,20 @@ public class TransactionStack{
         top = -1;
     }
     public void push(char item){
-        if (top == capacity - 1) {
+        if (top == capacity - 1){
             System.out.println("Stack is full.");
             return;
         }
         stack[++top] = item;
     }
-    public char pop() {
-        if (isEmpty()) {
+    public char pop(){
+        if (isEmpty()){
             return '\0';
         }
         return stack[top--];
     }
-    public char peek() {
-        if (isEmpty()) {
+    public char peek(){
+        if (isEmpty()){
             return '\0';
         }
         return stack[top];
