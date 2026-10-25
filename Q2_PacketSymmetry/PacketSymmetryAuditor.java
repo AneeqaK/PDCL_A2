@@ -14,7 +14,8 @@ public class PacketSymmetryAuditor{
             char queueChar = queue.dequeue();
 
             if (stackChar != queueChar) {
-                return false;  }
+                return false;  
+            }
         }
         return true;
     }
