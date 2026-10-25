@@ -25,8 +25,7 @@ public class PacketSymmetryAuditor{
         String data = input.nextLine();
         if (isSymmetric(data)){
             System.out.println("Result: Packet data is symmetric.");
-        } else 
-        {
+        }else{
             System.out.println("Result: Packet data is not symmetric.");
         }
         input.close();
