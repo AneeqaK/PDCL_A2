@@ -5,7 +5,7 @@ public class RequestQueue{
     private int rear;
     private int size;
     private int capacity;
-    public RequestQueue(int capacity) {
+    public RequestQueue(int capacity){
         this.capacity = capacity;
         queue = new char[capacity];
         front = 0;
