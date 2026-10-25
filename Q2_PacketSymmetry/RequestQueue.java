@@ -21,7 +21,7 @@ public class RequestQueue{
         queue[rear] = item;
         size++;
     }
-    public char dequeue() {
+    public char dequeue(){
         if (isEmpty()) {
             return '\0';
         }
