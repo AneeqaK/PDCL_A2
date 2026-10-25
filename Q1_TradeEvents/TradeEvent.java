@@ -1,15 +1,14 @@
 package Q1_TradeEvents;
-public class TradeEvent {
+public class TradeEvent{
     protected String senderId;
     protected long timestamp;
     protected double basePrice;
-
-    public TradeEvent(String senderId, long timestamp, double basePrice) {
+    public TradeEvent(String senderId, long timestamp, double basePrice){
         this.senderId = senderId;
         this.timestamp = timestamp;
         this.basePrice = basePrice;
     }
-    public void dispatch() {
+    public void dispatch(){
         System.out.println("Generic Trade Event");
         System.out.println("Sender: " + senderId);
         System.out.println("Timestamp: " + timestamp);

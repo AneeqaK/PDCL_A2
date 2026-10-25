@@ -1,6 +1,6 @@
 package Q1_TradeEvents;
-public class TradingEngineApp {
-    public static void main(String[] args) {
+public class TradingEngineApp{
+    public static void main(String[] args){
         TradeEvent event1 = new FIXOrderEvent(
             "FIX-Gateway", System.currentTimeMillis(),
             100.0, "ORD101", 10
