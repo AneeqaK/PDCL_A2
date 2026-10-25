@@ -1,10 +1,10 @@
 package Q1_TradeEvents;
-public class FIXOrderEvent extends TradeEvent{
+public class FIXOrderEvent extends TradeEvent {
     private String clOrdId;
     private int quantity;
     public FIXOrderEvent(String senderId, long timestamp,
                          double basePrice, String clOrdId,
-                         int quantity){
+                         int quantity) {
         super(senderId, timestamp, basePrice);
         this.clOrdId = clOrdId;
         this.quantity = quantity;}
@@ -19,6 +19,7 @@ public class FIXOrderEvent extends TradeEvent{
         System.out.println("Quantity: " + quantity);
         System.out.printf("Order Value: %.2f%n", orderValue);
         System.out.printf("Transaction Fee: %.2f%n", fee);
-        System.out.printf("Total Cost: %.2f%n", totalCost); }
+        System.out.printf("Total Cost: %.2f%n", totalCost); 
+    }
 }
 
