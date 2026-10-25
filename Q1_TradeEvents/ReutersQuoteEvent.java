@@ -1,15 +1,15 @@
 package Q1_TradeEvents;
-public class ReutersQuoteEvent extends TradeEvent {
+public class ReutersQuoteEvent extends TradeEvent{
     private double bidPrice;
     private double askPrice;
     public ReutersQuoteEvent(String senderId, long timestamp,
                              double basePrice, double bidPrice,
-                             double askPrice) {
+                             double askPrice){
         super(senderId, timestamp, basePrice);
         this.bidPrice = bidPrice;
         this.askPrice = askPrice;}
     @Override
-    public void dispatch() {
+    public void dispatch(){
         double spread = askPrice - bidPrice;
         System.out.println("\nReuters Market Quote");
         System.out.println("Sender: " + senderId);
