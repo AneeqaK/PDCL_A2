@@ -13,7 +13,7 @@ public class PacketSymmetryAuditor{
             char stackChar = stack.pop();
             char queueChar = queue.dequeue();
 
-            if (stackChar != queueChar) {
+            if (stackChar != queueChar){
                 return false;  }
         }
         return true;
