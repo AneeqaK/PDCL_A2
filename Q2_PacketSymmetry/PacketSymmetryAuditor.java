@@ -4,7 +4,7 @@ public class PacketSymmetryAuditor {
     public static boolean isSymmetric(String data){
         TransactionStack stack = new TransactionStack(data.length());
         RequestQueue queue = new RequestQueue(data.length());
-        for (int i = 0; i < data.length(); i++) {
+        for (int i = 0; i < data.length(); i++){
             char ch = data.charAt(i);
             stack.push(ch);
             queue.enqueue(ch);
