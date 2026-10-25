@@ -1,5 +1,5 @@
 package Q2_PacketSymmetry;
-public class RequestQueue {
+public class RequestQueue{
     private char[] queue;
     private int front;
     private int rear;
