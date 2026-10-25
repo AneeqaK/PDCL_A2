@@ -10,7 +10,7 @@ public class FIXOrderEvent extends TradeEvent {
         this.quantity = quantity;
     }
     @Override
-    public void dispatch() {
+    public void dispatch(){
         double orderValue = basePrice * quantity;
         double fee = orderValue * 0.0015;
         double totalCost = orderValue + fee;
@@ -21,6 +21,6 @@ public class FIXOrderEvent extends TradeEvent {
         System.out.printf("Order Value: %.2f%n", orderValue);
         System.out.printf("Transaction Fee: %.2f%n", fee);
         System.out.printf("Total Cost: %.2f%n", totalCost);
-    }
+}
 }
 
