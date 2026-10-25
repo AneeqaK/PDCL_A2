@@ -27,7 +27,7 @@ public class TransactionStack{
         }
         return stack[top];
     }
-    public boolean isEmpty() {
+    public boolean isEmpty(){
         return top == -1;
     }
 }
